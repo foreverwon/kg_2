@@ -29,13 +29,13 @@ def about(request):
     return render(request, 'about.html')
 
 def ongoing(request):
-    return render(request, 'ongoing.html')  # 필요시 context 추가
+    return render(request, 'poster/ongoing.html')  # 필요시 context 추가
 
 def closed(request):
-    return render(request, 'closed.html')
+    return render(request, 'poster/closed.html')
 
 def detail(request):
-    return render(request, 'detail.html')  # 필요시 context 추가
+    return render(request, 'poster/detail.html')  # 필요시 context 추가
 
 # 마이페이지
 def mypage_profile(request):

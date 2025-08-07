@@ -67,9 +67,9 @@ def poster_detail(request, pk):
 def ongoing_contests(request):
     today = date.today()
     contests = Poster.objects.filter(end_date__gte=today).order_by('end_date')
-    return render(request, 'ongoing.html', {'contests': contests})
+    return render(request, 'poster/ongoing.html', {'contests': contests})
 
 def closed_contests(request):
     today = date.today()
     contests = Poster.objects.filter(end_date__lt=today).order_by('-end_date')
-    return render(request, 'closed.html', {'contests': contests})
+    return render(request, 'poster/closed.html', {'contests': contests})

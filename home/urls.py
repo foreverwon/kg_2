@@ -6,9 +6,9 @@ app_name = 'home'
 urlpatterns = [
     path('', views.main_page, name='index'),  # 기존 유지
     path('about/', views.about, name='about'),
-    path('ongoing/', views.ongoing, name='ongoing'),
-    path('closed/', views.closed, name='closed'),
-    path('detail/', views.detail, name='detail'),
+    path('poster/ongoing/', views.ongoing, name='ongoing'),
+    path('poster/closed/', views.closed, name='closed'),
+    path('poster/detail/', views.detail, name='detail'),
 
     # 마이페이지
     path('mypage/profile/', views.mypage_profile, name='mypage_profile'),
